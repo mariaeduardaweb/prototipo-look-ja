@@ -1,30 +1,68 @@
-# Look Já Boutique — protótipo (e-commerce de moda)
+# 🛍️ LookJá — Marketplace de Moda
 
-Protótipo navegável em HTML + CSS + JavaScript puro (sem build, sem dependências).
+Protótipo funcional de um *marketplace de moda* desenvolvido com *HTML5, CSS3 e JavaScript (Vanilla JS)*, conectando múltiplos vendedores e compradores em uma experiência completa — da vitrine de produtos ao painel de gestão de lojas e acompanhamento de pedidos.
 
-## Como rodar no VS Code
-1. Abra a pasta `lookja` no VS Code (Arquivo > Abrir Pasta).
-2. Instale a extensão **Live Server** (Ritwick Dey).
-3. Clique com o botão direito em `index.html` > **Open with Live Server**.
-   (Também funciona abrindo o `index.html` direto no navegador.)
+---
 
-Internet é usada só para as fontes do Google e para consultar CEP (ViaCEP / BrasilAPI).
-Sem internet, o protótipo usa fontes do sistema e uma tabela offline de CEPs de demonstração.
+## 🎨 Protótipo no Figma
+O design, fluxo de usuário e interfaces do comprador e do vendedor foram planejados no Figma:
+👉 Acessar o projeto no Figma:(https://www.figma.com/design/h43Hukhf7DzV7KAvRtiNOP/Trabalho-UX-UI---LOOK-J%C3%81?node-id=0-1&t=kpjFbP5FSu9B0jle-1)
 
-## Estrutura
-- `index.html` — moldura do app e ordem de carregamento dos scripts
-- `css/styles.css` — identidade visual (fundo escuro, lilás e rosa)
-- `js/utils.js` — formatação, datas, máscaras, validações, SHA-256
-- `js/data.js` — regras de negócio (constantes), categorias, cores, catálogo inicial (37 produtos), frete por UF
-- `js/store.js` — estado, persistência (localStorage), dados de demonstração, estoque, preço, cupom e pedidos
-- `js/cep.js` — consulta de CEP e cálculo de frete/prazo
-- `js/auth.js` — cadastro, login, recuperação de senha e sessão
-- `js/views-shop.js` — home, busca, filtros, produto, favoritos, avaliações
-- `js/views-cart.js` — carrinho, cupom, checkout, pagamento e confirmação
-- `js/views-orders.js` — conta, meus pedidos, rastreio, cancelamento, troca/devolução, e-mails
-- `js/views-panels.js` — painéis do vendedor, do administrador e da transportadora
-- `js/app.js` — ícones, navegação, renderização e inicialização
-- `assets/img/` — 37 fotos dos produtos
+---
+
+## ✨ Funcionalidades
+- *Vitrine Multi-vendedores:* Catálogo dinâmico reunindo produtos de diferentes lojistas em um só lugar.
+- *Painéis de Gestão:* Área dedicada para administração de anúncios, lojas e visualização de dados.
+- *Carrinho de Compras:* Adição, remoção e atualização dinâmica de itens e cálculo de totais.
+- *Consulta de CEP:* Busca de endereço integrada para simulação de entrega.
+- *Autenticação de Usuários:* Fluxo de login e controle de sessão para clientes e vendedores.
+- *Gestão de Pedidos:* Histórico e acompanhamento completo das compras realizadas.
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+- *HTML5* (Estrutura semântica)
+- *CSS3* (Estilização responsiva e layout)
+- *JavaScript (ES6+)* (Arquitetura modular com gerenciamento de estado, painéis, carrinho, CEP e views dinâmicas)
+- *Figma* (Prototipação UI/UX)
+
+---
+
+## 📁 Estrutura de Pastas
+text
+prototipo-look-ja/
+├── assets/
+│   └── img/            # Imagens dos produtos e banners
+├── css/
+│   └── styles.css      # Estilização global e responsividade
+├── js/
+│   ├── app.js          # Inicialização e roteamento
+│   ├── auth.js         # Sistema de autenticação
+│   ├── cep.js          # Consulta de CEP
+│   ├── data.js         # Base de dados dos produtos e lojas
+│   ├── store.js        # Gerenciamento de estado
+│   ├── utils.js        # Funções auxiliares
+│   ├── views-cart.js   # Telas do carrinho
+│   ├── views-orders.js # Telas de pedidos
+│   ├── views-panels.js # Painéis de gestão
+│   └── views-shop.js   # Telas da vitrine
+├── index.html          # Página principal
+└── README.md           # Documentação do projeto
+
+
+---
+
+## 🚀 Como rodar o projeto localmente
+1. Clone este repositório:
+   bash
+   git clone https://github.com
+   
+2. Abra a pasta do projeto no navegador clicando duas vezes no arquivo *index.html* (ou utilize a extensão *Live Server* no VS Code).
+
+---
+
+## 👩‍💻 Autoria
+Desenvolvido por *Maria Eduarda* — [GitHub](https://github.com)
 
 ## Contas de demonstração (senha de todas: `Look1234`)
 | Perfil | E-mail |
